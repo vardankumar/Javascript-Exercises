@@ -45,6 +45,16 @@
 
 // CHAPTER 2
 
+
+
+
+
+
+
+
+
+
+
 // Question 1
 
 // Declare a variable called username.
@@ -123,5 +133,48 @@
 // browser through JS
 // “▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”
 
-var design = "▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬"
-alert(design)
+// var design = "▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬"
+// alert(design)
+
+
+
+
+
+
+
+
+
+
+
+// Chapter 3
+
+
+
+
+
+
+
+
+
+// Question 1
+
+// Declare a variable called age & assign to it your age. Show your age in an alert box.
+
+// var age = 25
+// alert("I am " + age + " years old.")
+
+
+
+
+
+
+
+// Question 2
+
+// Declare & initialize a variable to keep track of how manytimes a visitor has visited a web page. Show his/her number of visits on your web page. For example: “You have visited this site N times”.
+
+// var visitiedTimes = 13
+// alert("You have visited this site " + visitiedTimes + " times")
+
+
+
