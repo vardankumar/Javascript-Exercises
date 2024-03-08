@@ -128,7 +128,8 @@
 
 
 
-//  Q3 Cost of one movie ticket is 600 PKR. Write a script to
+
+//  Q4 Cost of one movie ticket is 600 PKR. Write a script to
 // store
 // ticket price in a variable & calculate the cost of buying 5
 // tickets
@@ -137,13 +138,241 @@
 
 
 
-let ticketPrice = 600;
-let totalTickets = 5
+// let ticketPrice = 600;
+// let totalTickets = 5
 
-let totalCost = totalTickets * ticketPrice;
+// let totalCost = totalTickets * ticketPrice;
 
-document.write(`<h3>Total cost to buy ${totalTickets} to a movie is ${totalCost}PKR.</h3>`)
-
-
+// document.write(`<h3>Total cost to buy ${totalTickets} to a movie is ${totalCost}PKR.</h3>`)
 
 
+
+
+
+
+
+// Q5 Write a script to display multiplication table of any number in your browser.
+
+// const table = prompt('Please enter a number')
+
+// for (let i = 1; i <= 10; i++) {
+//     document.write(`${table} X ${i} = ${table * (i)} <br>`)
+// }
+
+
+
+
+
+
+// Q7 Write a program to implement checkout process of a
+// shopping cart system for an e-commerce website. Store
+// the following in variables
+
+
+
+// let item1 = prompt("Enter the prie of item1.")
+// let item1Quantity = prompt("Enter the quantity of item1.")
+// let item2 = prompt("Enter the prie of item2.")
+// let item2Quantity = prompt("Enter the quantity of item2.")
+// let shippingCharges = 100
+
+
+// document.write(`Price of item 1 is ${item1}<br>`)
+// document.write(`Quantity of item 1 is ${item1Quantity}<br>`)
+// document.write(`Price of item 2 is ${item2}<br>`)
+// document.write(`Quantity of item 2 is ${item2Quantity}<br>`)
+// document.write(`Shipping charges ${shippingCharges}<br>`)
+// document.write(`Total cost of your order is ${(item1 * item1Quantity) + (item2 * item2Quantity) + shippingCharges}<br>`)
+
+
+
+
+
+
+// Q8 Store total marks & marks obtained by a student in 2
+// variables. Compute the percentage & show the result in
+// your browser
+
+
+// let totalMarks = +prompt('Enter Total Marks')
+// let obtainedMarks = +prompt('Enter obtained Marks')
+// const result = (obtainedMarks / totalMarks) * 100
+
+// document.write(`Total marks: ${totalMarks}<br>`)
+// document.write(`Obtained marks: ${obtainedMarks}<br>`)
+// document.write(`Percentage : ${result}%<br>`)
+
+
+// Q9: Assume we have 10 US dollars & 25 Saudi Riyals. Write a
+// script to convert the total currency to Pakistani Rupees.
+// Perform all calculations in a single expression.
+// (Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee
+// and 1 Saudi Riyal = 28 Pakistani Rupee)
+
+// let usd = 10
+// let riyal = 25
+// let usdExchangeRate = 280
+// let riyalExchangeRate = 83
+
+// let totalAmountPkr = ((riyal * riyalExchangeRate) + (usd * usdExchangeRate))
+
+// document.write(`Total currency in PKR: ${totalAmountPkr}`)
+
+
+
+
+
+
+
+
+
+
+
+// Q10 Write a program to initialize a variable with some
+// number and do arithmetic in following sequence:
+// a. Add 5
+// b. Multiply by 10
+// c. Divide the result by 2
+// Perform all calculations in a single expression
+
+
+
+
+// let number = 7
+// // console.log((((number += 5) * 10) / 2))
+// document.write((((number += 5) * 10) / 2))
+
+
+
+
+
+
+
+
+
+//  Q3 The Lifetime Supply Calculator: Ever wonder how
+// much a “lifetime supply” of your favorite snack is?
+// Wonder no more.
+// a. Store your favorite snack into a variable
+// b. Store your current age into a variable.
+// c. Store a maximum age into a variable.
+// d. Store an estimated amount per day (as a number).
+// e. Calculate how many would you eat total for the rest of
+// your life.
+// Output the result to the screen like so: “You will need
+// NNNN to last you until the ripe old age of NN”.
+
+
+// let favourateSnack = 'Black Chocolate'
+// let myCurrentAge = 24;
+// let maximumAge = 85;
+// let estimatedSnackPerDay = 0.5
+// let totalAge = maximumAge - myCurrentAge;
+// console.log(totalAge);
+// let leapDays = (totalAge / 4).toFixed(0);
+// console.log(leapDays);
+// let totalSnacksNeeded = estimatedSnackPerDay * (totalAge * 365) + leapDays
+// console.log(totalSnacksNeeded)
+
+
+// document.write('<h1>The Lifetime Supply Calculator</h1><br>')
+// document.write(`Favourite Snack : ${favourateSnack}<br>`)
+// document.write(`CurrentAge : ${myCurrentAge}<br>`)
+// document.write(`EstimatedMaxAge : ${maximumAge}<br>`)
+// document.write(`Amount of snacks per day : ${estimatedSnackPerDay}<br>`)
+// document.write(`You will need ${totalSnacksNeeded} ${favourateSnack} to last you untill the ripe old age of ${maximumAge}<br>`)
+
+
+
+
+
+
+
+
+
+
+
+
+// CHAPTER 6
+
+
+
+
+
+
+
+
+
+
+
+// Q1 Write a program to take a number in a variable, do the
+// required arithmetic to display the following result in your
+// browser:
+
+// let num = 5
+
+// document.write(`Result:<br>`)
+// document.write(`The value of num is ${num}<br><hr><br>`)
+// document.write(`The value of ++num is ${++num}<br>`)
+// document.write(`Now the value of ++num is ${num}<br><br>`)
+// document.write(`The value of num++ is ${num++}<br>`)
+// document.write(`Now the value of num++ is ${num}<br><br>`)
+// document.write(`The value of --num is ${--num}<br>`)
+// document.write(`Now the value of --num is ${num}<br><br>`)
+// document.write(`The value of num-- is ${num--}<br>`)
+// document.write(`Now the value of num-- is ${num}<br><br>`)
+
+
+
+
+// Q2 What will be the output in variables a, b & result after
+// execution of the following script:
+// var a = 2, b = 1;
+// var result = --a - --b + ++b + b--;
+// Explain the output at each stage:
+// --a; 
+// --a - --b;
+// --a - --b + ++b;
+// --a - --b + ++b + b--;
+
+
+// let a = 2;
+// let b = 1;
+// let result = --a - --b + ++b + b--
+
+// --a;               // 1
+// --a - --b;         // 1 - 0
+// --a - --b + ++b;   // 1 - 0 + 2
+// --a - --b + ++b + b--;  // 1 - 0 + 2 + 2
+
+
+// document.write(`a is ${a}<br>`)
+// document.write(`b is ${b}<br>`)
+// document.write(`result is ${result}<br>`)
+
+
+
+
+
+// Q3 Write a program that takes input a name from user &
+// greet the user.
+
+// let userName = prompt('Enter your name.')
+// document.write(`Hello ${userName}`)
+
+
+
+
+
+
+// Q5 Write a program to take input a number from user &
+// display it’s multiplication table on your browser. If user
+// does not enter a new number, multiplication table of 5
+// should be displayed by default.
+
+
+// const table = prompt('Please enter a number' , 5)
+
+// for (let i = 1; i <= 10; i++) {
+//     document.write(`${table} X ${i} = ${table * (i)} <br>`)
+// }
