@@ -155,7 +155,7 @@
 // Q9 Write a program to print multiples of 5 ranging 1 to
 // 100.
 
-for(let i = 1; i < 101; i++) {
-    document.write(`${i * 5}, `)
-    if(i === 100) document.write(`${i * 5}`) 
-}
+// for(let i = 1; i < 101; i++) {
+//     document.write(`${i * 5}, `)
+//     if(i === 100) document.write(`${i * 5}`) 
+// }
