@@ -140,3 +140,100 @@
 
 
 
+
+// Math Methods
+
+// Q1 Write a program that takes a positive integer from user &
+// display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+
+// let number = prompt('Enter a number')
+// console.log(`Number : ${number}`)
+// console.log(`Round off value : ${Math.round(number)}`)
+// console.log(`Ceil value : ${Math.ceil(number)}`)
+// console.log(`Floor value : ${Math.floor(number)}`)
+
+
+
+
+
+
+// Q2 Write a program that takes a negative floating point
+// number from user & display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+
+
+
+// let negNumber = prompt('Write a negative number')
+// console.log(`Number : ${negNumber}`)
+// console.log(`Round off value : ${Math.round(negNumber)}`)
+// console.log(`Ceil value : ${Math.ceil(negNumber)}`)
+// console.log(`floor value : ${Math.floor(negNumber)}`)
+
+
+
+
+
+// Q3 Write a program that displays the absolute value of a
+// number.
+
+// let number = prompt('Write a number to get abs of it')
+// console.log(`Number is ${number}`)
+// console.log(`Absolute of Number is ${Math.abs(number)}`)
+
+
+
+
+
+// Q4 Write a program that simulates a dice using random()
+// method of JS Math class. Display the value of dice in your
+// browser.:
+
+// document.write((Math.floor(Math.random() * 6)) + 1 )
+
+
+
+
+
+// Q5 Write a program that simulates a coin toss using random()
+// method of JS Math class. Display the value of coin in your
+// browser
+
+// let number = ((Math.floor(Math.random() * 2)) + 1 )
+// document.write(number)
+// document.write('<br>')
+// if(number === 1){
+//     document.write('Random coin value: ' + "Heads")
+// } else {
+//     document.write('Random coin value: ' + "Tails")
+// }
+
+
+// Q6 Write a program that shows a random number between 1
+// and 100 in your browser.
+
+
+// document.write(`Random number between 1 and 100 is ${(Math.floor(Math.random() * 100)) + 1}`)
+
+
+
+
+
+
+
+// Date Methods
+
+// document.write(new Date())
+
+// Q2 Write a program that alerts the current month in words.
+// For example December.
+
+alert(`Current month : ${new Date().getMonth().toLocaleString('default', {month : 'long'})}`)
