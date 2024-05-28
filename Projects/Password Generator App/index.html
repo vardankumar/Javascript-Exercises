@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <input type="text" id="password" placeholder="Password" >
+        </div>
+        <div class="options">
+
+            <button class="passwordBtn" onclick="generatePassword()">Generate Password</button>
+
+            <input type="range" name="" id="passlen" min="8" max="15" onchange="generatePassword()">
+
+            <div id="len"></div>
+
+        </div>
+
+
+        <div class="checkboxes">
+            <label for="uppercase">
+                <input type="checkbox" name="" id="uppercase" onchange="generatePassword()">
+                Uppercase
+            </label>
+        
+            <label for="numbers">
+                <input type="checkbox" name="" id="numbers" onchange="generatePassword()">
+                Numbers
+            </label>
+
+        
+            <label for="characters">
+                <input type="checkbox" name="" id="characters" onchange="generatePassword()">
+                Special Characters
+            </label>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
