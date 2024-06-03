@@ -1,1 +1,1 @@
-https://marvelous-dasik-788d3e.netlify.app/
+https://smit-calculator-project.netlify.app/
