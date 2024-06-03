@@ -1,0 +1,45 @@
+body{
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#task_input{
+    padding: 20px;
+    border: 1px solid violet;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.task_btn{
+    font-size: 17px;
+    background-color: bisque;
+    border: 1px solid violet;
+    padding: 8px 20px;
+}
+
+.todos{
+    width: 500px;
+    /* background-color: aqua; */
+    height: 60vh;
+    overflow: hidden;
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: 20px 420px;
+    overflow: auto;
+}
+
+.todo{
+    list-style: none;
+    font-size: 30px;
+    padding: 10px;
+}
