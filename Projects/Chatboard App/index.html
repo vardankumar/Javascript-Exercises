@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatboard App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="banner">
+            <h4>SMIT Registration Chatboard</h1>
+        </div>
+        <div class="main">
+            <label for="userInput">
+                
+                <!-- <div>
+                    <button onclick="submit()">Send</button>
+                </div> -->
+            </label>
+            <div>
+                <ul id="para">
+                    
+                </ul>
+            </div>
+            <div style="display: none;" id="Typing">
+                Typing...
+            </div>
+            <input type="text" id="userInput" placeholder="Ask Something" autocomplete="off" onkeydown="sendMessage()" >
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

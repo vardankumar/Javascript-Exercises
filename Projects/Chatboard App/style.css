@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.main{
+    width: 40%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.banner{
+    background-color: rgb(130, 186, 142);
+    position: fixed;
+    top: 7%;
+    left: 38%;
+    width: 300px;
+    height: 25px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    border-top: 1px solid transparent;
+    border-radius: 20px;
+}
+
+ul{
+    list-style: none;
+    position: absolute;
+    /* width: 70%; */
+    width: auto;
+    padding: auto;
+    /* overflow: scroll; */
+}
+
+#Typing{
+    color : #fff;
+}
+
+#para > li{
+    padding: 5px;
+    margin: 7px;
+    border-radius: 10px;
+    width: auto;
+}
+
+.prompt, .response{
+    width: auto;
+    max-width: 100%;
+    padding: auto;
+}
+
+
+.prompt{
+    background-color: red;
+    color: #fff;
+    width: auto;
+    margin: 3px;
+    position: relative;
+    left: 80px;
+}
+
+.response{
+    background-color: green;
+    color: #fff;
+    width: auto;
+    margin: 3px;
+    position : relative;
+    right : 120px;
+}
+
+#userInput{
+    position : fixed;
+    bottom : 20%;
+    width: 300px;
+    padding: 5px 10px;
+
+}
