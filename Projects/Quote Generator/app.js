@@ -1,12 +1,28 @@
 // GET QUOTES FROM API
 let apiQuotes = [];
-let quote = document.getElementById('quote')
-let authorName = document.getElementById('author')
+const quoteContainer = document.getElementById('quote-container')
+const quoteText = document.getElementById('quote')
+const authorText = document.getElementById('author')
+const twitterBtn = document.getElementById('twitter')
+const newQuoteBtn = document.getElementById('new-quote')
 
 function newQuote(){
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)]
-    console.log(quote);
-    return quote
+    if(!quote.author){
+        authorText.textContent = 'Unknown'
+    }else{
+        authorText.textContent = quote.author;
+    }
+
+
+    if(quote.text.length > 50){
+        quoteText.classList.add('long-quote')
+    }else{
+        quoteText.classList.remove('long-quote')
+
+    }
+
+    quoteText.textContent = quote.text;
 }
 
 async function getQuotes(){
@@ -15,15 +31,23 @@ async function getQuotes(){
 
         const response = await fetch(apiUrl)
         apiQuotes = await response.json()
-        let {text, author} = newQuote()
-        quote.innerHTML = text
-        authorName.innerHTML = author
-        
+        newQuote()
         
     } catch (error) {
         
     }
 }
+
+function tweetQuote(){
+    const twitterUrl = `https://x.com/intent/post?text=${quoteText.textContent} - ${authorText.textContent}`;
+    window.open(twitterUrl, '_blank')
+}
+
+
+// Event Listners
+
+newQuoteBtn.addEventListener('click', newQuote)
+twitterBtn.addEventListener('click', tweetQuote)
 
 
 getQuotes()
